@@ -20,7 +20,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    # External apps that go before Django's
+    # External apps that need to go before Django's
     # Django modules
     "django.contrib.admin",
     "django.contrib.auth",
