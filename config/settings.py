@@ -33,6 +33,7 @@ INSTALLED_APPS = [
     # External apps
     "django_extensions",
     "rest_framework",
+    "mptt",
 ]
 
 MIDDLEWARE = [
