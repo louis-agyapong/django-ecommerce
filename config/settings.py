@@ -29,7 +29,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     # Local apps
-    "apps.shop",
+    "apps.ecommerce",
     # External apps
     "django_extensions",
     "rest_framework",
