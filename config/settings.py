@@ -73,7 +73,8 @@ WSGI_APPLICATION = "config.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 # Parse database connection url strings like psql://user:pass@127.0.0.1:8458/db
-DATABASES = {"default": dj_database_url.config(default=config("SQLITE_URL"))}
+# DATABASES = {"default": dj_database_url.config(default=config("SQLITE_URL"))}
+DATABASES = {"default": dj_database_url.config(default=config("DATABASE_URL"))}
 
 
 # Password validation
