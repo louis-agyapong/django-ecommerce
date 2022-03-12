@@ -8,8 +8,10 @@ class Category(MPTTModel):
     Inventory category table implemented with MPTT
     """
 
-    name = models.CharField(_("Name"), max_length=100)
-    slug = models.SlugField(_("Slug"), max_length=100, help_text=_("A URL-friendly title."))
+    name = models.CharField(_("Name"), max_length=255)
+    slug = models.SlugField(
+        _("Slug"), max_length=255, help_text=_("A URL-friendly title."), unique=True, allow_unicode=True
+    )
     is_active = models.BooleanField(_("Is active"), default=True)
     parent = TreeForeignKey(
         "self",
