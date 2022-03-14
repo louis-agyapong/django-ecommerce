@@ -17,6 +17,9 @@ Pillow = "^8.4.0"
 coverage = "^6.0.2"
 django-mptt = "^0.13.4"
 psycopg2-binary = "^2.9.3"
+pytest-django = "^4.5.2"
+pytest-factoryboy = "^2.1.0"
+pytest-selenium = "^2.0.1"
 
 [tool.poetry.dev-dependencies]
 ipython = "^7.19.0"
